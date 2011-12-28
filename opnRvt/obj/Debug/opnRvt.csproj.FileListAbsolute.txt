@@ -1,0 +1,5 @@
+c:\users\ajackson\documents\visual studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.dll
+c:\users\ajackson\documents\visual studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.pdb
+c:\users\ajackson\documents\visual studio 2010\Projects\opnRvt\opnRvt\obj\Debug\ResolveAssemblyReference.cache
+c:\users\ajackson\documents\visual studio 2010\Projects\opnRvt\opnRvt\obj\Debug\opnRvt.dll
+c:\users\ajackson\documents\visual studio 2010\Projects\opnRvt\opnRvt\obj\Debug\opnRvt.pdb

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Assembly>c:\users\ajackson\documents\visual studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.dll</Assembly>
+		<FullClassName>opnRvt.opnRvtApp</FullClassName>
+		<ClientId>78c1ea57-b539-4880-9ab6-3f12db6573bf</ClientId>
+		<Name>opnRvt</Name>
+	</AddIn>
+</RevitAddIns>
