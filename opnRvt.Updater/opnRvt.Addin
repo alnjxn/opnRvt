@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>opnRvt</Name>
+    <Assembly>C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Release\opnRvt.dll</Assembly>
+    <AddInId>78c1ea57-b539-4880-9ab6-3f12db6573bf</AddInId>
+    <FullClassName>opnRvt.App.Ribbon</FullClassName>
+    <VendorId>OPNR</VendorId>
+    <VendorDescription>openRevit, www.openRevit.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

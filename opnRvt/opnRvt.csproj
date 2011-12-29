@@ -64,7 +64,9 @@
     <Content Include="..\..\..\..\..\AppData\Roaming\Autodesk\Revit\Addins\2012\opnRvt - Test.Addin">
       <Link>opnRvt - Test.Addin</Link>
     </Content>
-    <Content Include="opnRvt.Addin" />
+    <Content Include="opnRvt.Addin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="ReadMe.txt" />
     <Content Include="Resources\export-excel-icon-s.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
