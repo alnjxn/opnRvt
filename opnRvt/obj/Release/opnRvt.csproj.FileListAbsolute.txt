@@ -1,3 +1,7 @@
+C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Release\Resources\export-excel-icon-s.png
+C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Release\Resources\export-excel-icon.png
+C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Release\Resources\table-import-icon-s.png
+C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Release\Resources\table-import-icon.png
 C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Release\opnRvt.dll
 C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Release\opnRvt.pdb
 C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Release\ResolveAssemblyReference.cache

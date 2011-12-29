@@ -56,15 +56,9 @@
   <ItemGroup>
     <Compile Include="AutoParameter.cs" />
     <Compile Include="FamilyParameterAssigner.cs" />
-    <Compile Include="opnRvtApp.cs" />
     <Compile Include="ParamToCSV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\ParamToCSV16x16.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\ParamToCSV32x32.bmp" />
+    <Compile Include="Ribbon.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\..\..\..\AppData\Roaming\Autodesk\Revit\Addins\2012\opnRvt - Test.Addin">
@@ -72,9 +66,18 @@
     </Content>
     <Content Include="opnRvt.Addin" />
     <Content Include="ReadMe.txt" />
-    <EmbeddedResource Include="Resources\export-excel-icon.bmp" />
-    <EmbeddedResource Include="Resources\AddParameterToFamily16x16.bmp" />
-    <EmbeddedResource Include="Resources\AddParameterToFamily32x32.bmp" />
+    <Content Include="Resources\export-excel-icon-s.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\export-excel-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\table-import-icon-s.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\table-import-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
