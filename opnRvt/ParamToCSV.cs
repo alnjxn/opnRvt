@@ -37,7 +37,7 @@ using RvtDocument = Autodesk.Revit.DB.Document;
 
 #endregion
 
-namespace opnRvt
+namespace opnRvt.Parameters
 {
     [Transaction(TransactionMode.Manual)]
     [Regeneration(RegenerationOption.Manual)]

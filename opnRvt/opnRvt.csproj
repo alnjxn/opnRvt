@@ -10,9 +10,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>opnRvt</RootNamespace>
     <AssemblyName>opnRvt</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,18 +34,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
-    <Reference Include="RevitApi">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit Architecture 2011\Program\RevitApi.dll</HintPath>
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit Architecture 2012\Program\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="RevitApiUi">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit Architecture 2011\Program\RevitApiUi.dll</HintPath>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit Architecture 2012\Program\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -52,7 +54,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExtCmd1.cs" />
+    <Compile Include="AutoParameter.cs" />
+    <Compile Include="FamilyParameterAssigner.cs" />
     <Compile Include="opnRvtApp.cs" />
     <Compile Include="ParamToCSV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,11 +67,14 @@
     <EmbeddedResource Include="Resources\ParamToCSV32x32.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\..\..\AppData\Roaming\Autodesk\Revit\Addins\2011\opnRvt - Test.Addin">
+    <Content Include="..\..\..\..\..\AppData\Roaming\Autodesk\Revit\Addins\2012\opnRvt - Test.Addin">
       <Link>opnRvt - Test.Addin</Link>
     </Content>
     <Content Include="opnRvt.Addin" />
     <Content Include="ReadMe.txt" />
+    <EmbeddedResource Include="Resources\export-excel-icon.bmp" />
+    <EmbeddedResource Include="Resources\AddParameterToFamily16x16.bmp" />
+    <EmbeddedResource Include="Resources\AddParameterToFamily32x32.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

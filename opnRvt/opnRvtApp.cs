@@ -97,14 +97,19 @@ namespace opnRvt
             RibbonPanel panel = _cachedUiCtrApp.CreateRibbonPanel("opnRvt");
 
             ////Default button:
-            PushButtonData pbDataParamToCSV = new PushButtonData("ParamToCSV", "ParamToCSV", Assembly.GetExecutingAssembly().Location, "opnRvt.ParamToCSV");
+            PushButtonData pbDataParamToCSV = new PushButtonData("ParamToCSV", "Export Family \nParameters", Assembly.GetExecutingAssembly().Location, "opnRvt.Parameters.ParamToCSV");
             PushButton pbParamToCSV = panel.AddItem(pbDataParamToCSV) as PushButton; 
             pbParamToCSV.ToolTip = "ParamToCSV";
             pbParamToCSV.LargeImage = BmpImageSource("opnRvt.Resources.ParamToCSV32x32.bmp");
             pbParamToCSV.Image = BmpImageSource("opnRvt.Resources.ParamToCSV16x16.bmp");
 
             ////More buttons:
-
+            PushButtonData pbDataAddParameterToFamily = new PushButtonData("AddParameterToFamily", "Bind Parameters \nTo Family",
+                Assembly.GetExecutingAssembly().Location, "opnRvt.Parameters.AddParameterToFamily");
+            PushButton pbAddParameterToFamily = panel.AddItem(pbDataAddParameterToFamily) as PushButton;
+            pbAddParameterToFamily.ToolTip = "AddParameterToFamily";
+            pbAddParameterToFamily.LargeImage = BmpImageSource("opnRvt.Resources.AddParameterToFamily32x32.bmp");
+            pbParamToCSV.Image = BmpImageSource("opnRvt.Resources.AddParameterToFamily16x16.bmp");
 
             return panel;
         }
