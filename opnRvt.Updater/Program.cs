@@ -73,8 +73,6 @@ namespace opnRvt.Updater
                     // Quiet Fail
                 }
             }
-<<<<<<< HEAD
-=======
             foreach (FileInfo fiPngNext in fiPng)
             {
                 try
@@ -86,8 +84,6 @@ namespace opnRvt.Updater
                     // Quiet Fail
                 }
             }
-
->>>>>>> testing
         }
     }
 }
