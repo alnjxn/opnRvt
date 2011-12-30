@@ -49,19 +49,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ipcjCM+lCN3TZqS7PQA7YdCIr58=</dsig:DigestValue>
+        <dsig:DigestValue>eFaZI5jGj94QH+Jk5GhG/ucCDSE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="opnRvt.Updater.exe" size="5632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="opnRvt.Updater.exe" size="5120">
       <assemblyIdentity name="opnRvt.Updater" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>yExEuDJuW5gVFPeA1zkOl8d2/HA=</dsig:DigestValue>
+        <dsig:DigestValue>qx3jiNM2mehcQ0R42VLOd4zxqxU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -72,6 +72,42 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>WpVwOA3GvZUGzkU8GouSMW+0eCo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="opnRvt.export-excel-icon.png" size="1590">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MGrSTlYqyoV3sXxn0jpJCmPGWNM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="opnRvt.export-excel-icon-s.png" size="719">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kEfvoUkpAosBUOJleF+LemXdeeo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="opnRvt.table-import-icon.png" size="1122">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8juzNMhYFsorAYHxolrudknQRdU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="opnRvt.table-import-icon-s.png" size="598">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TSsRNuCmxJKl7S5OBbKfgvDWmEM=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

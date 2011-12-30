@@ -16,7 +16,6 @@ namespace opnRvt.Updater
     {
         private static string sourcePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         private static string dirWin7 = Environment.GetEnvironmentVariable("UserProfile") + "\\AppData\\Roaming\\";
-
         private static string dirXP = Environment.GetEnvironmentVariable("UserProfile") + "\\Application Data\\";
 
         public static void Main()
@@ -34,7 +33,6 @@ namespace opnRvt.Updater
                 return;
             }
             // Warn on Failure
-            MessageBox.Show("Your Operating System was not Properly Detected", "Installation Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
         }
         /// <summary>
@@ -50,6 +48,8 @@ namespace opnRvt.Updater
             DirectoryInfo di = new DirectoryInfo(sourcePath);
             FileInfo[] fiAddin = di.GetFiles("*.addin");
             FileInfo[] fiDll = di.GetFiles("*.dll");
+            FileInfo[] fiPng = di.GetFiles("*.png");
+
             
             foreach (FileInfo fiAddinNext in fiAddin)
             {
@@ -73,10 +73,18 @@ namespace opnRvt.Updater
                     // Quiet Fail
                 }
             }
+            foreach (FileInfo fiPngNext in fiPng)
+            {
+                try
+                {
+                    fiPngNext.CopyTo(pathAddin + "\\" + fiPngNext.Name, true);
+                }
+                catch (Exception)
+                {
+                    // Quiet Fail
+                }
+            }
+
         }
-
-        //public static string sourcePath { get; set; }
-
-        //public static IEnumerable<object> filesAddin { get; set; }
     }
 }
