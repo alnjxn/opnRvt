@@ -80,16 +80,16 @@ namespace opnRvt.App
                 AddInPath, "opnRvt.Parameters.ParamToCSV");
             PushButton pbParamToCSV = ribbonPanel.AddItem(pbDataParamToCSV) as PushButton;
             pbParamToCSV.ToolTip = "Export Family Parameters To CSV File";
-            pbParamToCSV.LargeImage = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "Resources\\export-excel-icon.png"), UriKind.Absolute));
-            pbParamToCSV.Image = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "Resources\\export-excel-icon-s.png"), UriKind.Absolute));
+            pbParamToCSV.LargeImage = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.export-excel-icon.png"), UriKind.Absolute));
+            pbParamToCSV.Image = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.export-excel-icon-s.png"), UriKind.Absolute));
 
             //Create Second button:
             PushButtonData pbDataAddParameterToFamily = new PushButtonData("AddParameterToFamily", "Bind Parameters \nTo Family", 
                 AddInPath, "opnRvt.Parameters.AddParameterToFamily");
             PushButton pbAddParameterToFamily = ribbonPanel.AddItem(pbDataAddParameterToFamily) as PushButton;
             pbAddParameterToFamily.ToolTip = "Bind Shared Parameters From External File to Family";
-            pbAddParameterToFamily.LargeImage = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "Resources\\table-import-icon.png"), UriKind.Absolute));
-            pbAddParameterToFamily.Image = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "Resources\\table-import-icon-s.png"), UriKind.Absolute));
+            pbAddParameterToFamily.LargeImage = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.table-import-icon.png"), UriKind.Absolute));
+            pbAddParameterToFamily.Image = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.table-import-icon-s.png"), UriKind.Absolute));
 
             
             return ribbonPanel;
