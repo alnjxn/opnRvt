@@ -81,8 +81,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>Copy $(OutDir)opnRvt-DEBUG.Addin %25APPDATA%25\Autodesk\Revit\Addins\2012\opnRvt-DEBUG.Addin
-Copy $(OutDir)*.png %25APPDATA%25\Autodesk\Revit\Addins\2012\</PostBuildEvent>
+    <PostBuildEvent>copy "$(ProjectDir)opnRvt-DEBUG.addin" "$(AppData)\Autodesk\REVIT\Addins\2012\opnRvt-DEBUG.addin"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
