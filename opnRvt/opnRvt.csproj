@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="AutoParameter.cs" />
     <Compile Include="FamilyParameterAssigner.cs" />
+    <Compile Include="ParamRecover.cs" />
     <Compile Include="ParamToCSV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ribbon.cs" />
@@ -79,6 +80,10 @@
     <Content Include="ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>Copy $(OutDir)opnRvt-DEBUG.Addin %25APPDATA%25\Autodesk\Revit\Addins\2012\opnRvt-DEBUG.Addin
+Copy $(OutDir)*.png %25APPDATA%25\Autodesk\Revit\Addins\2012\</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

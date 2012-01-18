@@ -91,6 +91,14 @@ namespace opnRvt.App
             pbAddParameterToFamily.LargeImage = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.table-import-icon.png"), UriKind.Absolute));
             pbAddParameterToFamily.Image = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.table-import-icon-s.png"), UriKind.Absolute));
 
+            //Create Third button:
+            PushButtonData pbDataParamRecover = new PushButtonData("ParamRecover", "Recover Shared \nParameters",
+                AddInPath, "opnRvt.Parameters.ParamRecover");
+            PushButton pbParamRecover = ribbonPanel.AddItem(pbDataParamRecover) as PushButton;
+            pbParamRecover.ToolTip = "Recover Shared Parameters To CSV File";
+            pbParamRecover.LargeImage = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.export-excel-icon.png"), UriKind.Absolute));
+            pbParamRecover.Image = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.export-excel-icon-s.png"), UriKind.Absolute));
+
             
             return ribbonPanel;
         }
