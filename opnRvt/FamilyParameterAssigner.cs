@@ -103,7 +103,6 @@ namespace opnRvt.Parameters
          succeeded = LoadSharedParameterFromFile(out sharedParamFileExist);
          if (!(famParamFileExist || sharedParamFileExist))
          {
-            MessageManager.MessageBuff.AppendLine("Neither familyParameter.txt nor sharedParameter.txt exists in the assembly folder.");
             return false;
          }
          if (!succeeded)
@@ -264,6 +263,7 @@ namespace opnRvt.Parameters
           openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
           openFileDialog1.FilterIndex = 1;
           openFileDialog1.RestoreDirectory = true;
+          openFileDialog1.Title = "Please Select the Shared Parameter File";
 
           if (openFileDialog1.ShowDialog() == DialogResult.OK)
           {
@@ -289,8 +289,11 @@ namespace opnRvt.Parameters
               }
               return true;
           }
-          exist = true;
-          return true;
+          else
+          {
+              exist = false;
+              return false;
+          }
       }
               
 

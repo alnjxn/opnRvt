@@ -13,3 +13,13 @@ C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opn
 C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Debug\opnRvt.dll
 C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Debug\opnRvt.pdb
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.Addin
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.export-excel-icon-s.png
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.export-excel-icon.png
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.table-import-icon-s.png
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.table-import-icon.png
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.pdb
+C:\Users\Alan\dev\opnRvt\opnRvt\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alan\dev\opnRvt\opnRvt\obj\Debug\opnRvt.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\obj\Debug\opnRvt.pdb

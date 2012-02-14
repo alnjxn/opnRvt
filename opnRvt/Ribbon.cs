@@ -99,6 +99,14 @@ namespace opnRvt.App
             pbParamRecover.LargeImage = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.export-excel-icon.png"), UriKind.Absolute));
             pbParamRecover.Image = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.export-excel-icon-s.png"), UriKind.Absolute));
 
+            //Create Fourth button:
+            PushButtonData pbDataAddParameterToFamilies = new PushButtonData("AddParameterToFamilies", "Batch Process \nFolder",
+                AddInPath, "opnRvt.Parameters.AddParameterToFamilies");
+            PushButton pbAddParameterToFamilies = ribbonPanel.AddItem(pbDataAddParameterToFamilies) as PushButton;
+            pbAddParameterToFamilies.ToolTip = "Batch Process an Entire Folder of Families";
+            pbAddParameterToFamilies.LargeImage = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.table-import-icon.png"), UriKind.Absolute));
+            pbAddParameterToFamilies.Image = new BitmapImage(new Uri(Path.Combine(ButtonIconsFolder, "opnRvt.table-import-icon-s.png"), UriKind.Absolute));
+
             
             return ribbonPanel;
         }
