@@ -43,7 +43,7 @@ namespace opnRvt.Updater
         private static void doCopy(string destination)
         {
             // Addin path
-            string pathAddin = destination + "Autodesk\\Revit\\Addins\\2012";
+            string pathAddin = destination + "Autodesk\\Revit\\Addins\\2013";
             // Get Files
             DirectoryInfo di = new DirectoryInfo(sourcePath);
             FileInfo[] fiAddin = di.GetFiles("*.addin");
