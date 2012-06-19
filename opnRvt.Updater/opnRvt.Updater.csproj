@@ -29,9 +29,9 @@
     <SupportUrl>http://www.openrevit.com</SupportUrl>
     <ProductName>openRevit Add-Ins %28Updater%29</ProductName>
     <PublisherName>openRevit</PublisherName>
-    <SuiteName>RAC2012</SuiteName>
-    <ApplicationRevision>5</ApplicationRevision>
-    <ApplicationVersion>2012.1.1.%2a</ApplicationVersion>
+    <SuiteName>Revit 2012 Add-Ins</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2012.1.2.1</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -56,7 +56,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>6810EB00717FCB1DFC37B0CAA5250751DC62710C</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>BC20F0D9DBC6C5171C1A2F6FB1D22795FD63CD25</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>opnRvt.Updater_TemporaryKey.pfx</ManifestKeyFile>
@@ -132,22 +132,22 @@
   <ItemGroup>
     <PublishFile Include="opnRvt">
       <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="opnRvt.Addin">
       <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
   </ItemGroup>

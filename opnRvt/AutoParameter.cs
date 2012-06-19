@@ -144,131 +144,142 @@ namespace opnRvt.Parameters
    [Autodesk.Revit.Attributes.Journaling(Autodesk.Revit.Attributes.JournalingMode.NoCommandData)]
    public class AddParameterToFamilies : IExternalCommand
    {
-      // the active Revit application
-      private Autodesk.Revit.ApplicationServices.Application m_app;
+       // the active Revit application
+       private Autodesk.Revit.ApplicationServices.Application m_app;
 
-      /// <summary>
-      /// Implement this method as an external command for Revit.
-      /// </summary>
-      /// <param name="commandData">An object that is passed to the external application 
-      /// which contains data related to the command, 
-      /// such as the application object and active view.</param>
-      /// <param name="message">A message that can be set by the external application 
-      /// which will be displayed if a failure or cancellation is returned by 
-      /// the external command.</param>
-      /// <param name="elements">A set of elements to which the external application 
-      /// can add elements that are to be highlighted in case of failure or cancellation.</param>
-      /// <returns>Return the status of the external command. 
-      /// A result of Succeeded means that the API external method functioned as expected. 
-      /// Cancelled can be used to signify that the user cancelled the external operation 
-      /// at some point. Failure should be returned if the application is unable to proceed with 
-      /// the operation.</returns>
-      public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData,
-                                             ref string message,
-                                             ElementSet elements)
-      {
-         m_app = commandData.Application.Application;
-         MessageManager.MessageBuff = new StringBuilder();
+       /// <summary>
+       /// Implement this method as an external command for Revit.
+       /// </summary>
+       /// <param name="commandData">An object that is passed to the external application 
+       /// which contains data related to the command, 
+       /// such as the application object and active view.</param>
+       /// <param name="message">A message that can be set by the external application 
+       /// which will be displayed if a failure or cancellation is returned by 
+       /// the external command.</param>
+       /// <param name="elements">A set of elements to which the external application 
+       /// can add elements that are to be highlighted in case of failure or cancellation.</param>
+       /// <returns>Return the status of the external command. 
+       /// A result of Succeeded means that the API external method functioned as expected. 
+       /// Cancelled can be used to signify that the user cancelled the external operation 
+       /// at some point. Failure should be returned if the application is unable to proceed with 
+       /// the operation.</returns>
+       public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData,
+                                              ref string message,
+                                              ElementSet elements)
+       {
+           m_app = commandData.Application.Application;
+           MessageManager.MessageBuff = new StringBuilder();
 
-         try
-         {
-            bool succeeded = LoadFamiliesAndAddParameters();
+           try
+           {
+               bool succeeded = LoadFamiliesAndAddParameters();
 
-            if (succeeded)
-            {
-               return Autodesk.Revit.UI.Result.Succeeded;
-            }
-            else
-            {
-               message = MessageManager.MessageBuff.ToString();
+               if (succeeded)
+               {
+                   return Autodesk.Revit.UI.Result.Succeeded;
+               }
+               else
+               {
+                   message = MessageManager.MessageBuff.ToString();
+                   return Autodesk.Revit.UI.Result.Failed;
+               }
+           }
+           catch (Exception e)
+           {
+               message = e.Message;
                return Autodesk.Revit.UI.Result.Failed;
-            }
-         }
-         catch (Exception e)
-         {
-            message = e.Message;
-            return Autodesk.Revit.UI.Result.Failed;
-         }
-      }
+           }
+       }
 
-      /// <summary>
-      /// search for the family files and the corresponding parameter records
-      /// load each family file, add parameters and then save and close.
-      /// </summary>
-      /// <returns>
-      /// if succeeded, return true; otherwise false
-      /// </returns>
-      private bool LoadFamiliesAndAddParameters()
-      {
-         bool succeeded = true;
+       /// <summary>
+       /// search for the family files and the corresponding parameter records
+       /// load each family file, add parameters and then save and close.
+       /// </summary>
+       /// <returns>
+       /// if succeeded, return true; otherwise false
+       /// </returns>
+       private bool LoadFamiliesAndAddParameters()
+       {
+           bool succeeded = true;
 
-         List<string> famFilePaths = new List<string>();
+           List<string> famFilePaths = new List<string>();
 
-         Environment.SpecialFolder myDocumentsFolder = Environment.SpecialFolder.MyDocuments;
-         string myDocs = Environment.GetFolderPath(myDocumentsFolder);
-         string families = myDocs + "\\AutoParameter_Families";
-         if (!Directory.Exists(families))
-         {
-            MessageManager.MessageBuff.Append("The folder [AutoParameter_Families] doesn't exist in [MyDocuments] folder.\n");
-         }
-         DirectoryInfo familiesDir = new DirectoryInfo(families);
-         FileInfo[] files = familiesDir.GetFiles("*.rfa");
-         if (0 == files.Length)
-         {
-            MessageManager.MessageBuff.Append("No family file exists in [AutoParameter_Families] folder.\n");
-         }
-         foreach (FileInfo info in files)
-         {
-            if (info.IsReadOnly)
-            {
-               MessageManager.MessageBuff.Append("Family file: \"" + info.FullName + "\" is read only. Can not add parameters to it.\n");
-               continue;
-            }
+           Environment.SpecialFolder myDocumentsFolder = Environment.SpecialFolder.MyComputer;
+           string myDocs = Environment.GetFolderPath(myDocumentsFolder);
 
-            string famFilePath = info.FullName;
-            Document doc = m_app.OpenDocumentFile(famFilePath);
+           FolderBrowserDialog folderBrowserDialog1 = new FolderBrowserDialog();
+           folderBrowserDialog1.RootFolder = myDocumentsFolder;
+           folderBrowserDialog1.ShowNewFolderButton = false;
+           folderBrowserDialog1.Description = "Select the Folder containing the families to be processed:";
 
-            if (!doc.IsFamilyDocument)
-            {
-               succeeded = false;
-               MessageManager.MessageBuff.Append("Document: \"" + famFilePath + "\" is not a family document.\n");
-               continue;
-            }
-            
-            // return and report the errors
-            if (!succeeded)
-            {
-               return false;
-            }
+           if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+           {
+               string families = folderBrowserDialog1.SelectedPath;
+               //string families = myDocs + "\\AutoParameter_Families";
+               // if (!Directory.Exists(families))
+               //{
+               //   MessageManager.MessageBuff.Append("The folder [AutoParameter_Families] doesn't exist in [MyDocuments] folder.\n");
+               //}
+               DirectoryInfo familiesDir = new DirectoryInfo(families);
+               FileInfo[] files = familiesDir.GetFiles("*.rfa");
+               if (0 == files.Length)
+               {
+                   MessageManager.MessageBuff.Append("No family file exists in [AutoParameter_Families] folder.\n");
+               }
+               foreach (FileInfo info in files)
+               {
+                   if (info.IsReadOnly)
+                   {
+                       MessageManager.MessageBuff.Append("Family file: \"" + info.FullName + "\" is read only. Can not add parameters to it.\n");
+                       continue;
+                   }
 
-            FamilyParameterAssigner assigner = new FamilyParameterAssigner(m_app, doc);
-            // the parameters to be added are defined and recorded in a text file, read them from that file and load to memory
-            succeeded = assigner.LoadParametersFromFile();
-            if (!succeeded)
-            {
-               MessageManager.MessageBuff.Append("Failed to load parameters from parameter files.\n");
-               return false;
-            }
-            Transaction t = new Transaction(doc, Guid.NewGuid().GetHashCode().ToString());
-            t.Start();
-            succeeded = assigner.AddParameters();
-            if (succeeded)
-            {
-               t.Commit();
-               doc.Save();
-               doc.Close();
-            }
-            else
-            {
-               t.RollBack();
-               doc.Close();
-               MessageManager.MessageBuff.Append("Failed to add parameters to " + famFilePath + ".\n");
-               return false;
-            }
-         }
-         return true;
-      }
-   } // end of class "AddParameterToFamilies"
+                   string famFilePath = info.FullName;
+                   Document doc = m_app.OpenDocumentFile(famFilePath);
+
+                   if (!doc.IsFamilyDocument)
+                   {
+                       succeeded = false;
+                       MessageManager.MessageBuff.Append("Document: \"" + famFilePath + "\" is not a family document.\n");
+                       continue;
+                   }
+
+                   // return and report the errors
+                   if (!succeeded)
+                   {
+                       return false;
+                   }
+
+                   FamilyParameterAssigner assigner = new FamilyParameterAssigner(m_app, doc);
+                   // the parameters to be added are defined and recorded in a text file, read them from that file and load to memory
+                   succeeded = assigner.LoadParametersFromFile();
+                   if (!succeeded)
+                   {
+                       MessageManager.MessageBuff.Append("Failed to load parameters from parameter files.\n");
+                       return false;
+                   }
+                   Transaction t = new Transaction(doc, Guid.NewGuid().GetHashCode().ToString());
+                   t.Start();
+                   succeeded = assigner.AddParameters();
+                   if (succeeded)
+                   {
+                       t.Commit();
+                       doc.Save();
+                       doc.Close();
+                   }
+                   else
+                   {
+                       t.RollBack();
+                       doc.Close();
+                       MessageManager.MessageBuff.Append("Failed to add parameters to " + famFilePath + ".\n");
+                       return false;
+                   }
+               }
+               return true;
+           }
+           return false;
+       }
+   }// end of class "AddParameterToFamilies"
 
    /// <summary>
    /// store the warning/error messeges when executing the sample
