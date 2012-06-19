@@ -1,0 +1,37 @@
+C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.dll
+C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.pdb
+C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Debug\opnRvt.dll
+C:\Users\ajackson\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Debug\opnRvt.pdb
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.Addin
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.export-excel-icon-s.png
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.export-excel-icon.png
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.table-import-icon-s.png
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.table-import-icon.png
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.dll
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\bin\Debug\opnRvt.pdb
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Debug\opnRvt.dll
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt\obj\Debug\opnRvt.pdb
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.Addin
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.export-excel-icon-s.png
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.export-excel-icon.png
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.table-import-icon-s.png
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.table-import-icon.png
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\opnRvt.pdb
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\RevitAPI.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\RevitAPIUI.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\DBManagedServices.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\AdWindows.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\RevitAddInUtility.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\APIInterop.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\UIFramework.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\UIFrameworkServices.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\ManagedMC3.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\RevitAPI.xml
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\RevitAPIUI.xml
+C:\Users\Alan\dev\opnRvt\opnRvt\bin\Debug\en-US\AdWindows.resources.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alan\dev\opnRvt\opnRvt\obj\Debug\opnRvt.dll
+C:\Users\Alan\dev\opnRvt\opnRvt\obj\Debug\opnRvt.pdb

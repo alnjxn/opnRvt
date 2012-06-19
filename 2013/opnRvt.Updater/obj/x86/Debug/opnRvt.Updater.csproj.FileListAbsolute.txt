@@ -1,0 +1,16 @@
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.Addin
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.export-excel-icon-s.png
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.export-excel-icon.png
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.table-import-icon-s.png
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.table-import-icon.png
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.Updater.exe.manifest
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.Updater.application
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.Updater.exe
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.Updater.pdb
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.dll
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\bin\Debug\opnRvt.pdb
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\obj\x86\Debug\opnRvt.Updater.exe.manifest
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\obj\x86\Debug\opnRvt.Updater.application
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\obj\x86\Debug\opnRvt.Updater.exe
+C:\Users\case1\Documents\Visual Studio 2010\Projects\opnRvt\opnRvt.Updater\obj\x86\Debug\opnRvt.Updater.pdb
