@@ -34,8 +34,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
-    <Reference Include="RevitAPI, Version=2013.0.0.0, Culture=neutral, processorArchitecture=AMD64" />
-    <Reference Include="RevitAPIUI, Version=2013.0.0.0, Culture=neutral, processorArchitecture=AMD64" />
+    <Reference Include="RevitAPI, Version=2013.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI, Version=2013.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -75,7 +79,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(ProjectDir)opnRvt.addin" "$(AppData)\Autodesk\REVIT\Addins\2013\opnRvt-DEBUG.addin"</PostBuildEvent>
+    <PostBuildEvent>copy "$(ProjectDir)opnRvt.addin" "$(AppData)\Autodesk\REVIT\Addins\2013\opnRvt.addin"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

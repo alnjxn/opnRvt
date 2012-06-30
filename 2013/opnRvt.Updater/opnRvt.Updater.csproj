@@ -24,14 +24,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://openrevit.com/dev/publish/</InstallUrl>
-    <UpdateUrl>http://openrevit.com/dev/publish/</UpdateUrl>
+    <InstallUrl>http://openrevit.com/dev/publish/2013/</InstallUrl>
+    <UpdateUrl>http://openrevit.com/dev/publish/2013/</UpdateUrl>
     <SupportUrl>http://www.openrevit.com</SupportUrl>
     <ProductName>openRevit Add-Ins %28Updater%29</ProductName>
     <PublisherName>openRevit</PublisherName>
-    <SuiteName>Revit 2012 Add-Ins</SuiteName>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>2013.0.1.0</ApplicationVersion>
+    <SuiteName>Revit 2013 Add-Ins</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2013.0.1.1</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -56,7 +56,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>BC20F0D9DBC6C5171C1A2F6FB1D22795FD63CD25</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>8D3D9918994C96814780AACB036C25B2C98E3902</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>opnRvt.Updater_TemporaryKey.pfx</ManifestKeyFile>
@@ -115,23 +115,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="opnRvt.Addin">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="opnRvt.export-excel-icon-s.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="opnRvt.export-excel-icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="opnRvt.table-import-icon-s.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="opnRvt.table-import-icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\opnRvt\opnRvt.csproj">
       <Project>{E8DE5DDE-3848-4A35-AA17-B51BCD3DCD37}</Project>
       <Name>opnRvt</Name>
@@ -161,6 +144,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="opnRvt.Updater_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\opnRvt\opnRvt.Addin">
+      <Link>opnRvt.Addin</Link>
+    </Content>
+    <Content Include="..\opnRvt\opnRvt.export-excel-icon-s.png">
+      <Link>opnRvt.export-excel-icon-s.png</Link>
+    </Content>
+    <Content Include="..\opnRvt\opnRvt.export-excel-icon.png">
+      <Link>opnRvt.export-excel-icon.png</Link>
+    </Content>
+    <Content Include="..\opnRvt\opnRvt.table-import-icon-s.png">
+      <Link>opnRvt.table-import-icon-s.png</Link>
+    </Content>
+    <Content Include="..\opnRvt\opnRvt.table-import-icon.png">
+      <Link>opnRvt.table-import-icon.png</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
